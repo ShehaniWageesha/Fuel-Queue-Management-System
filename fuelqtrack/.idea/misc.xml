@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/adnd/wimalki/app/src/main/res/drawable/colorround.xml" value="0.115" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/drawable/et_round.xml" value="0.115" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_add_station.xml" value="0.38055555555555554" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_getstarted.xml" value="0.16666666666666666" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_join.xml" value="0.16666666666666666" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_join_diesel.xml" value="0.3388888888888889" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_leave_queue.xml" value="0.17552083333333332" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_login.xml" value="0.3333333333333333" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_owner_home.xml" value="0.42135416666666664" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_register.xml" value="0.15388127853881278" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_service_login.xml" value="0.3388888888888889" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_service_register.xml" value="0.3388888888888889" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_update_station.xml" value="0.21197916666666666" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_view_queue.xml" value="0.22" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/activity_view_station.xml" value="0.13333333333333333" />
+        <entry key="..\:/adnd/wimalki/app/src/main/res/layout/stationcard.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

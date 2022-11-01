@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinDieselActivity">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="327dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        android:background="#E63F3F"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ENTER MOBILE NUMBER"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20d" />
+
+    <TextView
+        android:id="@+id/textView20d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOIN THE QUEUE"
+        android:textColor="#457BE8"
+        android:textSize="34sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7d"
+        android:layout_width="326dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2d"
+        android:layout_width="337dp"
+        android:layout_height="183dp"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7d">
+
+
+        <TextView
+            android:id="@+id/textView21d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E63F3F"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SELECT VEHICLE TYPE"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:checkedButton="@+id/radioButton3d">
+
+            <RadioButton
+                android:id="@+id/radioButton3d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="Lorry"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton4d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="Van"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button4d"
+        android:layout_width="162dp"
+        android:layout_height="61dp"
+        android:text="join queue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2d"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <Button
+        android:id="@+id/button5d"
+        android:layout_width="160dp"
+        android:layout_height="61dp"
+        android:text="cancel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toEndOf="@+id/button4d"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2d"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4d"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rrr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

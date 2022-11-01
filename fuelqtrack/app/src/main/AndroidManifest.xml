@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fuelqtrack">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FuelQTrack"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".AddStation"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateStation"
+            android:exported="false" />
+        <activity
+            android:name=".OwnerHome"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JoinDieselActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeaveQueue"
+            android:exported="false" />
+        <activity
+            android:name=".JoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewQueueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewStationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetstartedActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>
