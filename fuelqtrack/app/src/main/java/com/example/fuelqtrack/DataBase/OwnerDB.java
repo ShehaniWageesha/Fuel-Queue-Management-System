@@ -17,6 +17,8 @@ public class OwnerDB extends SQLiteOpenHelper {
     private static String userNameColumn = "name";
     private static String mobileColumn = "number";
     private static String nicColumn = "nic";
+    private static String stationNameColumn = "stationName";
+    private static String stationLocationColumn = "stationLocation";
     private static String passwordColumn = "password";
 
     public OwnerDB(Context context) {
@@ -31,6 +33,8 @@ public class OwnerDB extends SQLiteOpenHelper {
                 userNameColumn + " text," +
                 mobileColumn + " text," +
                 nicColumn + " text," +
+                stationNameColumn + " text," +
+                stationLocationColumn + " text," +
                 passwordColumn + " text" +
                 ")");
     }
@@ -48,6 +52,8 @@ public class OwnerDB extends SQLiteOpenHelper {
             contentValues.put(userNameColumn, ownerModel.getName());
             contentValues.put(mobileColumn, ownerModel.getNumber());
             contentValues.put(nicColumn, ownerModel.getNic());
+            contentValues.put(stationNameColumn, ownerModel.getStationName());
+            contentValues.put(stationLocationColumn, ownerModel.getStationLocation());
             contentValues.put(passwordColumn, ownerModel.getPassword());
             result = sqLiteDatabase.insert(tableName, null, contentValues) > 0;
 
@@ -69,7 +75,9 @@ public class OwnerDB extends SQLiteOpenHelper {
                 userA.setName(cursor.getString(1));
                 userA.setNumber(cursor.getString(2));
                 userA.setNic(cursor.getString(3));
-                userA.setPassword(cursor.getString(4));
+                userA.setStationName(cursor.getString(4));
+                userA.setStationLocation(cursor.getString(5));
+                userA.setPassword(cursor.getString(6));
 
             }
         } catch (Exception e) {
@@ -89,7 +97,9 @@ public class OwnerDB extends SQLiteOpenHelper {
                 userM.setName(cursor.getString(1));
                 userM.setNumber(cursor.getString(2));
                 userM.setNic(cursor.getString(3));
-                userM.setPassword(cursor.getString(4));
+                userM.setStationName(cursor.getString(4));
+                userM.setStationLocation(cursor.getString(5));
+                userM.setPassword(cursor.getString(6));
             }
         } catch (Exception e) {
             userM = null;

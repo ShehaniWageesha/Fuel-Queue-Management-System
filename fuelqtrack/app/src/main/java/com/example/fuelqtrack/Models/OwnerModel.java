@@ -8,6 +8,8 @@ public class OwnerModel implements Serializable {
     private String name;
     private String number;
     private String nic;
+    private String stationName;
+    private String stationLocation;
     private String password;
 
     public int getId() {
@@ -41,6 +43,20 @@ public class OwnerModel implements Serializable {
     public void setNic(String nic) {
         this.nic = nic;
     }
+
+    public String getStationName() {
+        return stationName;
+    }
+
+    public void setStationName(String stationName) {
+        this.stationName = stationName;
+    }
+
+    public String getStationLocation() {
+        return stationLocation;
+    }
+
+    public void setStationLocation(String stationLocation) { this.stationLocation = stationLocation; }
 
     public String getPassword() {
         return password;

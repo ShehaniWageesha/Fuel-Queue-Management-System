@@ -31,7 +31,6 @@ public class OwnerHome extends AppCompatActivity {
     RecyclerView rView;
     List<StationModel> list;
     OwnerAdapter ownerAdapter;
-    EditText edtsrch;
     Button AddStat;
     ImageButton imageButton;
 
@@ -40,8 +39,7 @@ public class OwnerHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_owner_home);
 
-        rView = findViewById(R.id.recyclerViewo);
-        edtsrch = findViewById(R.id.editTextTextPersonName5o);
+        rView = findViewById(R.id.recyclerView);
         AddStat = findViewById(R.id.addStat2);
         imageButton = findViewById(R.id.imageButton);
 
@@ -76,41 +74,13 @@ public class OwnerHome extends AppCompatActivity {
             }
         });
 
-        AddStat.setOnClickListener(new View.OnClickListener() {
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent i = new Intent(getApplicationContext(), ServiceLoginActivity.class);
                 startActivity(i);
             }
         });
-
-        edtsrch.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                search(editable.toString());
-
-            }
-        });
     }
 
-    private void search(String toString) {
-        ArrayList<StationModel> filterList = new ArrayList<>();
-
-        for (StationModel item: list){
-            if (item.getStationName().toLowerCase().contains(toString.toLowerCase())) {
-                filterList.add(item);
-            }
-        }
-        ownerAdapter.setFuelData(filterList);
-    }
 }

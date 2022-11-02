@@ -50,7 +50,7 @@
             android:id="@+id/editTextTextPersonNames"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/et_round"
             android:ems="10"
             android:hint="ENTER YOUR NAME"
@@ -61,7 +61,7 @@
             android:id="@+id/editTextTextPersonName2s"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/et_round"
             android:ems="10"
             android:hint="ENTER YOUR MOBILE NUMBER"
@@ -72,7 +72,7 @@
             android:id="@+id/nictxt"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/et_round"
             android:ems="10"
             android:hint="ENTER YOUR NIC"
@@ -80,10 +80,32 @@
             android:padding="10dp" />
 
         <EditText
+            android:id="@+id/statN"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/et_round"
+            android:ems="10"
+            android:hint="ENTER YOUR STATION"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/statL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/et_round"
+            android:ems="10"
+            android:hint="ENTER YOUR STATION LOCATION"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
             android:id="@+id/editTextTextPersonName3s"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/et_round"
             android:ems="10"
             android:hint="ENTER YOUR PASSWORD"
@@ -94,7 +116,7 @@
             android:id="@+id/editTextTextPersonName4s"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/et_round"
             android:ems="10"
             android:hint="CONFIRM YOUR PASSWORD"
@@ -149,5 +171,6 @@
 
                 app:backgroundTint="#F44336" />
         </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

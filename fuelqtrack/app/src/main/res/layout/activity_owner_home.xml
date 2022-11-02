@@ -6,64 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".OwnerHome">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="389dp"
+        android:layout_height="425dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="100dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintVertical_bias="0.197" />
+
     <Button
         android:id="@+id/addStat2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Station Info"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerViewo"
+        android:layout_width="238dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:text="Add Fuel Info"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5o"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8o" />
 
     <TextView
         android:id="@+id/textView8o"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FUEL STATION"
+        android:layout_marginTop="24dp"
+        android:text="FUEL STATION INFO"
         android:textColor="#457BE8"
-        android:textSize="48sp"
+        android:textSize="34sp"
         app:fontFamily="sans-serif-black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName5o"
-        android:layout_width="345dp"
-        android:layout_height="45dp"
-        android:background="@drawable/et_round"
-        android:ems="10"
-        android:hint="Search Fuel Station"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8o"
-        app:layout_constraintVertical_bias="0.013" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewo"
-        android:layout_width="402dp"
-        android:layout_height="414dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5o"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4o"
@@ -74,8 +56,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerViewo"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/rrr" />
 
     <ImageButton

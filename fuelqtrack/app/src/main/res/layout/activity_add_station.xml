@@ -10,7 +10,7 @@
         android:id="@+id/textView23"
         android:layout_width="240dp"
         android:layout_height="110dp"
-        android:text="ADD STATION INFORMATION "
+        android:text="ADD FUEL INFORMATION "
         android:textColor="#457BE8"
         android:textSize="34sp"
         app:fontFamily="sans-serif-black"
