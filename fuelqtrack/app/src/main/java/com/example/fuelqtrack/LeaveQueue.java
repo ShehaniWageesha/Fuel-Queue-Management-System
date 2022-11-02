@@ -107,7 +107,7 @@ public class LeaveQueue extends AppCompatActivity {
             @Override
             public void onResponse(Call<Object> call, Response<Object> response) {
                 Object data = response.body();
-                bike.setText("Bike : "+data.toString());
+                bike.setText("Motor Bike : "+data.toString());
             }
 
             @Override

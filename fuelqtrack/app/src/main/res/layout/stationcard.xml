@@ -9,16 +9,16 @@
 
     <Button
         android:id="@+id/view"
-        android:layout_width="146dp"
-        android:layout_height="56dp"
+        android:layout_width="110dp"
+        android:layout_height="53dp"
         android:text="VIEW"
         app:backgroundTint="#3F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.238"
+        app:layout_constraintVertical_bias="0.0"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="166dp" />
 

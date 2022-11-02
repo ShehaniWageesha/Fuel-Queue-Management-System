@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import com.example.fuelqtrack.API.ApiFuel;
 import com.example.fuelqtrack.Adapter.FuelAdapter;
@@ -32,6 +33,7 @@ public class OwnerHome extends AppCompatActivity {
     OwnerAdapter ownerAdapter;
     EditText edtsrch;
     Button AddStat;
+    ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class OwnerHome extends AppCompatActivity {
         rView = findViewById(R.id.recyclerViewo);
         edtsrch = findViewById(R.id.editTextTextPersonName5o);
         AddStat = findViewById(R.id.addStat2);
+        imageButton = findViewById(R.id.imageButton);
 
         rView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -69,6 +72,14 @@ public class OwnerHome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), AddStation.class);
+                startActivity(i);
+            }
+        });
+
+        AddStat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(i);
             }
         });

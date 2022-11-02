@@ -79,7 +79,7 @@ Router.get('/getPQueue/:stationName', async (req, res) => {
   Router.get('/getBikeQueue/:stationName', async (req, res) => {
     try {
 
-    const que =await Queues.count({stationName: req.params.stationName ,vehicalType: "Bike", joined: true})
+    const que =await Queues.count({stationName: req.params.stationName ,vehicalType: "Motor Bike", joined: true})
         res.json(que);
 
     } catch (error) {

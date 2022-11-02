@@ -17,14 +17,23 @@ public class StationCardActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         View = findViewById(R.id.view);
+//        Update = findViewById(R.id.updateB);
 
         View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), UpdateStation.class);
+                Intent i = new Intent(getApplicationContext(), ViewQueueActivity.class);
                 startActivity(i);
             }
         });
+
+//        Update.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i = new Intent(getApplicationContext(), UpdateStation.class);
+//                startActivity(i);
+//            }
+//        });
 
     }
 }

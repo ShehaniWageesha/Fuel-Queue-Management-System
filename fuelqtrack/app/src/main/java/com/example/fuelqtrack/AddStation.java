@@ -20,7 +20,7 @@ import retrofit2.Response;
 
 public class AddStation extends AppCompatActivity {
 
-    EditText stationName, address,petrolarival, dieselarrival, petrolLiters, dieselLiters, pfinishTime, dfinishTime;
+    EditText stationName, address, petrolarival, dieselarrival, petrolLiters, dieselLiters, pfinishTime, dfinishTime;
 
     Button save;
     @Override
@@ -64,7 +64,7 @@ public class AddStation extends AppCompatActivity {
                                                       @Override
                                                       public void onResponse(Call<StationModel> call, Response<StationModel> response) {
                                                           if(response.isSuccessful()){
-                                                              Intent i = new Intent(getApplicationContext(), ViewStationActivity.class);
+                                                              Intent i = new Intent(getApplicationContext(), OwnerHome.class);
                                                               startActivity(i);
                                                               Toast.makeText(AddStation.this,"Station Added Success", Toast.LENGTH_LONG).show();
                                                           }
