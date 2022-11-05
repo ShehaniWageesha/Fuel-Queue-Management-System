@@ -22,7 +22,6 @@ import retrofit2.Response;
 public class UpdateStation extends AppCompatActivity {
 
     EditText stationName, address, petrolarival, dieselarrival, petrolLiters, dieselLiters, pfinishTime, dfinishTime;
-
     Button btnUpdate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

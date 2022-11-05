@@ -39,8 +39,8 @@ public class ViewQueueActivity extends AppCompatActivity {
         van=findViewById(R.id.textView26);
         plit=findViewById(R.id.textView16);
         dlit=findViewById(R.id.textView18);
-        petbtn = findViewById(R.id.update);
-        disbtn = findViewById(R.id.button3);
+        petbtn=findViewById(R.id.update);
+        disbtn=findViewById(R.id.button3);
 
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat format = new SimpleDateFormat("HH:mm");

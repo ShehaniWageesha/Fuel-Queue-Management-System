@@ -23,8 +23,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="362dp"
-        android:layout_height="571dp"
+        android:layout_width="385dp"
+        android:layout_height="590dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +117,7 @@
             android:id="@+id/ftimeD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/et_round"
             android:ems="10"
             android:hint="ENTER DIESEL FINISH TIME"

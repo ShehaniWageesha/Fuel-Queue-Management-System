@@ -22,7 +22,7 @@ Router.post(
 
         });
       await station.save();
-      res.send('Satation details uploaded successfully.');
+      res.send('Station details uploaded successfully.');
       } catch (error) {
         res.status(400).send('Error while uploading Stations. Try again later.');
       }

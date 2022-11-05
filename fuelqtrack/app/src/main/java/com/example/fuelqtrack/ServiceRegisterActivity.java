@@ -16,7 +16,7 @@ import com.example.fuelqtrack.Models.OwnerModel;
 import com.example.fuelqtrack.Models.UserModel;
 
 public class ServiceRegisterActivity extends AppCompatActivity {
-    EditText username, mobile,nic, stationName, stationLocation, conPass, password;
+    EditText username, mobile, nic, stationName, conPass, password;
     Button lgviewbtn, registerbtn;
     TextView vehicleReg;
     @Override
@@ -32,7 +32,6 @@ public class ServiceRegisterActivity extends AppCompatActivity {
         conPass = findViewById(R.id.editTextTextPersonName4s);
         nic = findViewById(R.id.nictxt);
         stationName = findViewById(R.id.statN);
-        stationLocation = findViewById(R.id.statL);
         vehicleReg = findViewById(R.id.textView22);
 
         vehicleReg.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +60,6 @@ public class ServiceRegisterActivity extends AppCompatActivity {
                         ownerModel.setPassword(password.getText().toString());
                         ownerModel.setNic(nic.getText().toString());
                         ownerModel.setStationName(stationName.getText().toString());
-                        ownerModel.setStationLocation(stationLocation.getText().toString());
                         ownerModel.setNumber(mobile.getText().toString());
                         ownerModel.setName(username.getText().toString());
                         OwnerModel temp = ownerDB.checkUsername(username.getText().toString());
