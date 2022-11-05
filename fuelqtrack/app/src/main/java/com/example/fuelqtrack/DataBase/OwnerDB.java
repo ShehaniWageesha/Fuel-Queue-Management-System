@@ -18,7 +18,6 @@ public class OwnerDB extends SQLiteOpenHelper {
     private static String mobileColumn = "number";
     private static String nicColumn = "nic";
     private static String stationNameColumn = "stationName";
-    private static String stationLocationColumn = "stationLocation";
     private static String passwordColumn = "password";
 
     public OwnerDB(Context context) {
@@ -34,7 +33,6 @@ public class OwnerDB extends SQLiteOpenHelper {
                 mobileColumn + " text," +
                 nicColumn + " text," +
                 stationNameColumn + " text," +
-                stationLocationColumn + " text," +
                 passwordColumn + " text" +
                 ")");
     }
@@ -53,7 +51,6 @@ public class OwnerDB extends SQLiteOpenHelper {
             contentValues.put(mobileColumn, ownerModel.getNumber());
             contentValues.put(nicColumn, ownerModel.getNic());
             contentValues.put(stationNameColumn, ownerModel.getStationName());
-            contentValues.put(stationLocationColumn, ownerModel.getStationLocation());
             contentValues.put(passwordColumn, ownerModel.getPassword());
             result = sqLiteDatabase.insert(tableName, null, contentValues) > 0;
 
@@ -76,8 +73,7 @@ public class OwnerDB extends SQLiteOpenHelper {
                 userA.setNumber(cursor.getString(2));
                 userA.setNic(cursor.getString(3));
                 userA.setStationName(cursor.getString(4));
-                userA.setStationLocation(cursor.getString(5));
-                userA.setPassword(cursor.getString(6));
+                userA.setPassword(cursor.getString(5));
 
             }
         } catch (Exception e) {
@@ -98,8 +94,7 @@ public class OwnerDB extends SQLiteOpenHelper {
                 userM.setNumber(cursor.getString(2));
                 userM.setNic(cursor.getString(3));
                 userM.setStationName(cursor.getString(4));
-                userM.setStationLocation(cursor.getString(5));
-                userM.setPassword(cursor.getString(6));
+                userM.setPassword(cursor.getString(5));
             }
         } catch (Exception e) {
             userM = null;

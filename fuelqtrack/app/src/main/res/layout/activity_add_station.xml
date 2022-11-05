@@ -23,9 +23,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="385dp"
-        android:layout_height="590dp"
+        android:layout_width="345dp"
+        android:layout_height="598dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23">
@@ -37,10 +38,13 @@
             android:layout_marginBottom="15dp"
             android:background="@drawable/et_round"
             android:ems="10"
-
+            android:enabled="false"
             android:hint="ENTER STATION NAME"
             android:inputType="textPersonName"
-            android:padding="10dp" />
+            android:padding="10dp"
+            android:text="CEYPETCO FUEL STATION"
+            android:textAlignment="center"
+            android:textColor="#515151" />
 
         <EditText
             android:id="@+id/editTextTextPersonName8"
@@ -117,7 +121,7 @@
             android:id="@+id/ftimeD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/et_round"
             android:ems="10"
             android:hint="ENTER DIESEL FINISH TIME"
