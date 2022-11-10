@@ -24,6 +24,7 @@ public class AddStation extends AppCompatActivity {
 
     EditText stationName, address, petrolarival, dieselarrival, petrolLiters, dieselLiters, pfinishTime, dfinishTime;
     Button save;
+    Switch pSwitch, dSwitch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +40,12 @@ public class AddStation extends AppCompatActivity {
         pfinishTime = findViewById(R.id.ftimeP);
         dfinishTime = findViewById(R.id.ftimeD);
         save = findViewById(R.id.button6);
+        pSwitch = findViewById(R.id.switch1);
+        dSwitch = findViewById(R.id.switch2);
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
 
                 StationModel stationModel = new StationModel();
 
@@ -89,5 +91,32 @@ public class AddStation extends AppCompatActivity {
             }
         });
 
+        pSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    petrolarival.setVisibility(View.VISIBLE);
+                    petrolLiters.setVisibility(View.VISIBLE);
+                    pfinishTime.setVisibility(View.VISIBLE);
+                } else {
+                    petrolarival.setVisibility(View.GONE);
+                    petrolLiters.setVisibility(View.GONE);
+                    pfinishTime.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        dSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    dieselarrival.setVisibility(View.VISIBLE);
+                    dieselLiters.setVisibility(View.VISIBLE);
+                    dfinishTime.setVisibility(View.VISIBLE);
+                } else {
+                    dieselarrival.setVisibility(View.GONE);
+                    dieselLiters.setVisibility(View.GONE);
+                    dfinishTime.setVisibility(View.GONE);
+                }
+            }
+        });
     }
 }

@@ -43,8 +43,10 @@ public class FuelAdapter extends RecyclerView.Adapter<FuelAdapter.fuelAdapterVH>
         StationModel stationModel= stationCAt.get(position);
 
         String fuelStationName = stationModel.getStationName();
+        String fuelStationLocation = stationModel.getStationLocation();
 
         holder.fuelStationName.setText(fuelStationName);
+        holder.fuelStationLocation.setText(fuelStationLocation);
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,12 +73,13 @@ public class FuelAdapter extends RecyclerView.Adapter<FuelAdapter.fuelAdapterVH>
     }
 
     public class fuelAdapterVH extends RecyclerView.ViewHolder {
-        TextView fuelStationName;
+        TextView fuelStationName, fuelStationLocation;
         Button view;
         public fuelAdapterVH(@NonNull View itemView) {
             super(itemView);
 
             fuelStationName = itemView.findViewById(R.id.textView9);
+            fuelStationLocation = itemView.findViewById(R.id.textView36);
             view = itemView.findViewById(R.id.view);
         }
     }

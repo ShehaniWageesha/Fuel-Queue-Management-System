@@ -44,8 +44,11 @@ public class OwnerAdapter extends RecyclerView.Adapter<OwnerAdapter.ownerAdapter
         StationModel stationModel= stationCAt.get(position);
 
         String fuelStationName = stationModel.getStationName();
+        String stationAddress = stationModel.getStationLocation();
 
         holder.fuelStationName.setText(fuelStationName);
+        holder.stationAddress.setText(stationAddress);
+
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,7 +80,7 @@ public class OwnerAdapter extends RecyclerView.Adapter<OwnerAdapter.ownerAdapter
         public ownerAdapter(@NonNull View itemView) {
             super(itemView);
             fuelStationName = itemView.findViewById(R.id.textView9);
-            stationAddress = itemView.findViewById(R.id.textView3);
+            stationAddress = itemView.findViewById(R.id.textView36);
             view = itemView.findViewById(R.id.view);
         }
     }

@@ -65,7 +65,7 @@ public class ServiceRegisterActivity extends AppCompatActivity {
                         OwnerModel temp = ownerDB.checkUsername(username.getText().toString());
                         if (temp == null) {
                             if (ownerDB.create(ownerModel)) {
-                                Intent i = new Intent(ServiceRegisterActivity.this, AddStation.class);
+                                Intent i = new Intent(ServiceRegisterActivity.this, ServiceLoginActivity.class);
                                 startActivity(i);
                                 Toast.makeText(ServiceRegisterActivity.this, "Successfully Registered.", Toast.LENGTH_SHORT).show();
                             } else {

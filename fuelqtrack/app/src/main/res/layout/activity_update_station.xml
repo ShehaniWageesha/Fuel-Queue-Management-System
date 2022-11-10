@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
     tools:context=".UpdateStation">
 
     <EditText
@@ -43,18 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6u" />
 
-    <Button
-        android:id="@+id/button6u"
-        android:layout_width="341dp"
-        android:layout_height="62dp"
-        android:text="Update"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/df" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="355dp"
@@ -74,7 +63,7 @@
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         android:text="PETROL ARRIVAL TIME"
         android:textColor="#797A7C"
         android:textSize="20sp"
@@ -85,24 +74,10 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8u" />
 
     <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="PETROL LITRES"
-        android:textColor="#797A7C"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName13u"
-        app:layout_constraintHorizontal_bias="0.148"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
-
-    <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="25dp"
         android:text="DIESEL LITRES"
         android:textColor="#797A7C"
         android:textSize="20sp"
@@ -110,13 +85,13 @@
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName14u"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="25dp"
         android:text="PETROL FINISH TIME"
         android:textColor="#797A7C"
         android:textSize="20sp"
@@ -124,13 +99,13 @@
         app:layout_constraintEnd_toStartOf="@+id/pf"
         app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:text="DIESEL FINISH TIME"
         android:textColor="#797A7C"
         android:textSize="20sp"
@@ -138,7 +113,7 @@
         app:layout_constraintEnd_toStartOf="@+id/df"
         app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <EditText
         android:id="@+id/editTextTextPersonName13u"
@@ -149,7 +124,23 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/et_round"
         android:ems="10"
-        android:hint="ENTER PETROL LITERS"
+        android:hint="PETROL LITERS"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11u" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName14u"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/et_round"
+        android:ems="10"
+        android:hint="DIESEL LITERS"
         android:inputType="number"
         android:padding="5dp"
         android:textAlignment="center"
@@ -157,67 +148,35 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12u" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName14u"
+        android:id="@+id/pf"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/et_round"
         android:ems="10"
-        android:hint="ENTER DIESEL LITERS"
-        android:inputType="number"
+        android:hint="PETROL FINISH TIME"
+        android:inputType="textPersonName"
         android:padding="5dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName13u" />
 
     <EditText
-        android:id="@+id/pf"
+        android:id="@+id/df"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
+
         android:background="@drawable/et_round"
         android:ems="10"
-        android:hint="ENTER PETROL FINISH TIME"
+        android:hint="DIESEL FINISH TIME"
         android:inputType="textPersonName"
         android:padding="5dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName14u" />
-
-    <EditText
-        android:id="@+id/df"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/et_round"
-
-        android:ems="10"
-        android:hint="ENTER DIESEL FINISH TIME"
-        android:inputType="textPersonName"
-        android:padding="5dp"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pf" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName12u"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/et_round"
-
-        android:ems="10"
-        android:hint="ENTER DIESEL ARRIVAL TIME"
-        android:inputType="textPersonName"
-        android:padding="5dp"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11u" />
 
     <EditText
         android:id="@+id/editTextTextPersonName11u"
@@ -227,7 +186,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/et_round"
         android:ems="10"
-        android:hint="ENTER PETROL ARRIVAL TIME"
+        android:hint="PETROL ARRIVAL TIME"
         android:inputType="textPersonName"
         android:padding="5dp"
         android:textAlignment="center"
@@ -238,14 +197,57 @@
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="25dp"
         android:text="DIESEL ARRIVAL TIME"
         android:textColor="#797A7C"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName12u"
-        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName12u"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+
+        android:background="@drawable/et_round"
+        android:ems="10"
+        android:hint="DIESEL ARRIVAL TIME"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pf" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="PETROL LITRES"
+        android:textColor="#797A7C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName13u"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <Button
+        android:id="@+id/button6u"
+        android:layout_width="339dp"
+        android:layout_height="74dp"
+        android:text="Update"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/df"
+        app:layout_constraintVertical_bias="0.695" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

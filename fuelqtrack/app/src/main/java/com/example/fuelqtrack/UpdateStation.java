@@ -20,7 +20,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class UpdateStation extends AppCompatActivity {
-
     EditText stationName, address, petrolarival, dieselarrival, petrolLiters, dieselLiters, pfinishTime, dfinishTime;
     Button btnUpdate;
     @Override
@@ -37,6 +36,8 @@ public class UpdateStation extends AppCompatActivity {
         pfinishTime = findViewById(R.id.pf);
         dfinishTime = findViewById(R.id.df);
         btnUpdate = findViewById(R.id.button6u);
+
+        String Q = getIntent().getStringExtra("qLength");
 
         String stname = getIntent().getStringExtra("stationName");
         String id = getIntent().getStringExtra("_id");
